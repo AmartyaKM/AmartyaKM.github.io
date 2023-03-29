@@ -1,6 +1,6 @@
 ---
-title: "Professor Whiskers"
-logo: catStat.png
+title: "Amartya Kumar Maulik"
+logo: PXL_20230317_015135553.jpg
 description:
 ---
 
