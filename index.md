@@ -1,6 +1,6 @@
 ---
 title: "Amartya Kumar Maulik"
-logo: 07090_00022.jpg
+logo: 09000_00271.jpg
 description: |
   M.S. in Statistics at IIT, Kanpur <br />
   B.S. in Statistcis University of Calcultta
