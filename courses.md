@@ -1,4 +1,4 @@
-# Teaching Experience at Colorado State University
+# Colorado State University
 
 ## STAT 201: General Statistics
 - **Course Description:** Covered foundational topics including graphs, descriptive statistics, confidence intervals, hypothesis tests, and correlation. Utilized JMP software for data analysis.
