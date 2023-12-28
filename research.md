@@ -1,5 +1,3 @@
-# Research Experience
-
 ## PhD in Statistics, Colorado State University | Aug 2022 - Present
 
 ### Multiple Hypothesis Testing
