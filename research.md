@@ -1,7 +1,7 @@
 ## PhD in Statistics, Colorado State University | Aug 2022 - Present
 
 ### Multiple Hypothesis Testing
-- **Focus:** Bayesian Hypothesis Testing for Umbrella Trials.
+- **Focus:** Bayesian Hypothesis Testing .
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developing a robust Bayesian framework for multiple hypothesis testing in complex clinical trial settings.
 
