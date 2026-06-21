@@ -2,7 +2,7 @@
 
 ### Hierarchical Sparse Mixture of Finite Mixtures (Ongoing)
 - **Advisor:** Dr. Matt Kovlosky and Dr. Tianjian Zhou
-- **Description:**Developing a hierarchical sparse mixture model with group-specific component activation using zero-inflated priors, including posterior derivations and Gibbs sampling for efficient Bayesian inference.
+- **Description:** Developing a hierarchical sparse mixture model with group-specific component activation using zero-inflated priors, including posterior derivations and Gibbs sampling for efficient Bayesian inference.
 
 ### Bayesian Functional Generalized Probit Mixed Model for Scalar-on-Function Regression (Ongoing)
 - **Advisor:** Dr. Tianjian Zhou
