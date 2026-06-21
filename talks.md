@@ -1,2 +1,2 @@
 - [Presentation on Dirichiletprocess package](https://amartyakm.github.io/talks/Presentation.html)
-- [Presentation on Joint Asymptotic Distribution of U-Stat and Order Stat](Presentation on Joint Distribution of U and order Stat.pdf)
+- [Presentation on Joint Distribution of U and order Stat.pdf](Presentation%20on%20Joint%20Distribution%20of%20U%20and%20order%20Stat.pdf)
