@@ -18,33 +18,38 @@
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed and validated statistical prediction models using electronic health record data to predict discharge disposition and 30-day readmission among hospitalized traumatic brain injury patients. Built an accessible clinical prediction tool using regression models and machine learning evaluation techniques to support personalized discharge planning and risk stratification.
 
-## M.S. in Statistics, IITK | Aug 2019 - May 2021
+## M.S. in Statistics, IIT Kanpur | Aug 2019 – May 2021
 
 ### [Martingales in Discrete Time](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Supriyo_Sir_Project___MTH598A.pdf)
-- **Focus:** Explored martingales in discrete time.
-- **Advisor:** Dr. Supriyo Ghosh
-- **Learnings:** Measure-theoretic approach, Martingale Convergence Theorem.
+- Studied discrete-time martingales with a measure-theoretic perspective.
+- Advisor: Dr. Supriyo Ghosh
+- Key topics: Martingale convergence theorem and related theoretical results.
 
-### [MCMC in Mixture Models](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/MTH_707A_Project_Report.pdf) | Dr. Dootika Vats, IITK
-- **Description:** Simulated statistical distribution using infinite Dirichlet mixture model.
-- **Methods:** Collapsed Gibbs, Blocked Gibbs, Sliced Gibbs in R.
+### [MCMC in Mixture Models](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/MTH_707A_Project_Report.pdf)
+- Developed and implemented simulation methods for infinite Dirichlet mixture models.
+- Advisor: Dr. Dootika Vats
+- Methods: Collapsed Gibbs sampling, blocked Gibbs sampling, and sliced Gibbs sampling in R.
 
-### [Feature Selection and Classifiers](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Classification%20and%20Feature%20Selection.pdf) | Dr. Amit Mitra, IITK
-- **Description:** Evaluated models and feature selection on Mushroom Classification data.
-- **Methods:** Logistic Regression, LDA, Random Forest, Chi-Square, Mutual Information in Python.
-- **Conclusion:** LDA outperformed in time (37.1 ms) and accuracy (98.64%).
+### [Feature Selection and Classification](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Classification%20and%20Feature%20Selection.pdf)
+- Evaluated feature selection techniques and classification models on the Mushroom dataset.
+- Advisor: Dr. Amit Mitra
+- Methods: Logistic regression, LDA, random forest, chi-square tests, and mutual information (Python).
+- Result: LDA achieved the best balance of computational efficiency (37.1 ms) and accuracy (98.64%).
 
-### [Time Series Modeling of Apple Stock Price](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Time_Series_Analysis.pdf) | Dr. Amit Mitra, IITK
-- **Description:** Modeled Apple stock price, optimized ARIMA parameters.
-- **Methods:** Differencing, ADF test, ACF/PACF analysis, AIC comparison.
-- **Result:** Achieved low MSE in forecasting.
+### [Time Series Analysis of Apple Stock Prices](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Time_Series_Analysis.pdf)
+- Modeled and forecasted Apple stock prices using classical time series techniques.
+- Advisor: Dr. Amit Mitra
+- Methods: Stationarity testing (ADF), differencing, ACF/PACF diagnostics, ARIMA model selection via AIC.
+- Outcome: Achieved low forecasting error (MSE).
 
-### [PCA on Directional Data](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/PCA%20on%20Directional%20Data.pdf) | Dr. Minerva Mukhopadhyay, IITK
-- **Description:** Explored PCA of directional data, studied directional statistics.
-- **Distributions:** Uniform, Von Mises-Fisher, Bingham, Angular Central Gaussian.
-- **Learnings:** Explored principal components on directional data through simulation studies.
+### [Principal Component Analysis for Directional Data](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/PCA%20on%20Directional%20Data.pdf)
+- Investigated PCA techniques for directional and non-Euclidean data structures.
+- Advisor: Dr. Minerva Mukhopadhyay
+- Distributions studied: Uniform, von Mises–Fisher, Bingham, Angular Central Gaussian.
+- Focus: Simulation-based analysis of principal components in directional settings.
 
-## B.S. in Statistics, Calcutta University | Aug 2016 - May 2019
-### Psychological Survey 
-- **Description:** Conducted a psychological survey, failed to reject the null hypothesis.
-- **Learnings:** First and third-year students tended to be equally or less depressed than second-year students.
+## B.S. in Statistics, University of Calcutta | Aug 2016 – May 2019
+
+### Psychological Survey Project
+- Conducted an empirical study on psychological well-being across academic years.
+- Finding: No significant evidence of higher depression levels among second-year students compared to other cohorts.
