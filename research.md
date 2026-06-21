@@ -1,11 +1,10 @@
 ## PhD in Statistics, Colorado State University | Aug 2022 - Present
 
-### Hierarchical Sparse Mixture of Finite Mixtures
-- Ongoing
+### Hierarchical Sparse Mixture of Finite Mixtures ( Ongoing )
 - **Advisor:** Dr. Matt Kovlosky and Dr. Tianjian Zhou
 - **Description:**
-###Bayesian Functional Generalized Probit Mixed Model for Scalar-on-Function Regression
-- Ongoing
+
+### Bayesian Functional Generalized Probit Mixed Model for Scalar-on-Function Regression ( Ongoing )
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:**
 
