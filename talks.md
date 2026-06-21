@@ -1,2 +1,2 @@
 - [Presentation on Dirichiletprocess package](https://amartyakm.github.io/talks/Presentation.html)
-- [Presentation on Joint Distribution of U and order Stat.pdf](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Presentation%20on%20Joint%20Distribution%20of%20U%20and%20order%20Stat.pdf)
+- [Presentation on Joint Distribution of U and order Stat.pdf](https://github.com/AmartyaKM/AmartyaKM.github.io/raw/main/Presentation%20on%20Joint%20Distribution%20of%20U%20and%20order%20Stat.pdf)
