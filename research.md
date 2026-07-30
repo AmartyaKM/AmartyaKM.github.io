@@ -8,12 +8,12 @@
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed a Bayesian scalar-on-function regression model for four-category outcomes with spatially indexed functional predictors. Incorporated subject- and limb-level random effects to capture within-subject dependence and bilateral (forelimb) variability, enabling flexible hierarchical modeling of structured functional data.
 
-### [A Bayesian Decision-Theoretic Approach to Multiple Testing in Basket Trials](https://academic.oup.com/biometrics/article/82/2/ujag093/8691902?login=false)
+### [A Bayesian Decision-Theoretic Approach to Multiple Testing in Basket Trials](https://academic.oup.com/biometrics/article/82/2/ujag093/8691902?login=false) [Paper] (https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/A%20Bayesian%20decision-theoretic%20approach%20to%20multiple%20testing%20in%20basket%20trials.pdf)
 - Published in **Biometrics**
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed a Bayesian decision-theoretic framework for multiple testing in basket trials using adaptive loss functions to balance false positives and false negatives across subpopulations. Proposed a computationally efficient decision rule with tunable borrowing across baskets, enabling flexible error control and competitive performance in simulations and a vemurafenib application.
 
-### [Prediction tool for discharge disposition and 30-day readmission using electronic health records among patients hospitalized for traumatic brain injury](https://pubmed.ncbi.nlm.nih.gov/40589981/)
+### [Prediction tool for discharge disposition and 30-day readmission using electronic health records among patients hospitalized for traumatic brain injury](https://pubmed.ncbi.nlm.nih.gov/40589981/) [Paper](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Prediction%20tool%20for%20discharge%20disposition%20and%2030-day%20readmission%20using%20electronic%20health%20records%20among%20patients%20hospitalized%20for%20traumatic%20brain%20injury.pdf)
 - Published in **Frontiers in Neurology**
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed and validated statistical prediction models using electronic health record data to predict discharge disposition and 30-day readmission among hospitalized traumatic brain injury patients. Built an accessible clinical prediction tool using regression models and machine learning evaluation techniques to support personalized discharge planning and risk stratification.
