@@ -8,7 +8,7 @@
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed a Bayesian scalar-on-function regression model for four-category outcomes with spatially indexed functional predictors. Incorporated subject- and limb-level random effects to capture within-subject dependence and bilateral (forelimb) variability, enabling flexible hierarchical modeling of structured functional data.
 
-### [A Bayesian Decision-Theoretic Approach to Multiple Testing in Basket Trials](https://lnkd.in/gU3DQCnm)
+### [A Bayesian Decision-Theoretic Approach to Multiple Testing in Basket Trials](https://academic.oup.com/biometrics/article/82/2/ujag093/8691902?login=false)
 - Published in **Biometrics**
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed a Bayesian decision-theoretic framework for multiple testing in basket trials using adaptive loss functions to balance false positives and false negatives across subpopulations. Proposed a computationally efficient decision rule with tunable borrowing across baskets, enabling flexible error control and competitive performance in simulations and a vemurafenib application.
