@@ -4,44 +4,49 @@
 
 I have taught and supported instruction across undergraduate and graduate statistics courses, covering statistical literacy, programming, applied statistical methods, regression, and experimental design.
 
-#### Fall 2026
+### 2026
+#### Fall
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 - **STAA 573: Analysis of Time Series** — Grader
 
-#### Summer 2026
+#### Summer
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 
-#### Spring 2026
+#### Spring
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 
-#### Fall 2025
+### 2025
+#### Fall
 - **STAT 100: Statistical Literacy** — Instructor
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 
-#### Summer 2025
+#### Summer
 - **STAT 158: Introduction to R Programming** — Instructor
 
-#### Spring 2025
+#### Spring
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 - **STAT 530: Mathematical Statistics** — Grader
 
-#### Fall 2024
+### 2024
+#### Fall
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 - **STAT 540: Data Analysis and Regression** — Grader
 
-#### Spring 2024
+#### Spring
 - **STAT 100: Statistical Literacy** — Instructor
 - **STAR 512: Design and Data Analysis for Researchers II** — Grader
 
-#### Fall 2023
+### 2023
+#### Fall
 - **STAT 301: Introduction to Applied Statistical Methods** — Instructor
 - **STAT 341: Statistical Data Analysis I** — Grader
 
-#### Spring 2023
+#### Spring
 - **STAA 551: Regression Models and Applications** — Grader
 - **STAA 554: Mixed Models** — Grader
 
-#### Fall 2022
+### 20222
+#### Fall
 - **STAT 201: General Statistics** — Instructor
 
 ### Courses Taught
