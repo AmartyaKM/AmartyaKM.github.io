@@ -2,52 +2,46 @@
 
 ### Colorado State University
 
-I have taught and supported instruction across undergraduate and graduate statistics courses, covering statistical literacy, programming, applied statistical methods, regression, and experimental design.
+I have taught and supported instruction across undergraduate and graduate statistics courses at CSU, covering statistical literacy, programming, applied statistical methods, regression, and experimental design.
 
 ### 2026
 #### Fall
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-- **STAA 573: Analysis of Time Series** — Grader
-
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
+- **STAA 573: Analysis of Time Series** - Grader
 #### Summer
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
 #### Spring
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
+- 
 ### 2025
 #### Fall
-- **STAT 100: Statistical Literacy** — Instructor
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-
+- **STAT 100: Statistical Literacy** - Instructor
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
 #### Summer
-- **STAT 158: Introduction to R Programming** — Instructor
-
+- **STAT 158: Introduction to R Programming** - Instructor
 #### Spring
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-- **STAT 530: Mathematical Statistics** — Grader
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
+- **STAT 530: Mathematical Statistics** - Grader
 
 ### 2024
 #### Fall
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-- **STAT 540: Data Analysis and Regression** — Grader
-
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
+- **STAT 540: Data Analysis and Regression** - Grader
 #### Spring
-- **STAT 100: Statistical Literacy** — Instructor
-- **STAR 512: Design and Data Analysis for Researchers II** — Grader
+- **STAT 100: Statistical Literacy** - Instructor
+- **STAR 512: Design and Data Analysis for Researchers II** - Grader
 
 ### 2023
 #### Fall
-- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
-- **STAT 341: Statistical Data Analysis I** — Grader
-
+- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
+- **STAT 341: Statistical Data Analysis I** - Grader
 #### Spring
-- **STAA 551: Regression Models and Applications** — Grader
-- **STAA 554: Mixed Models** — Grader
+- **STAA 551: Regression Models and Applications** - Grader
+- **STAA 554: Mixed Models** - Grader
 
 ### 20222
 #### Fall
-- **STAT 201: General Statistics** — Instructor
+- **STAT 201: General Statistics** - Instructor
 
 ### Courses Taught
 
