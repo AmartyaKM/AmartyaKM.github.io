@@ -2,8 +2,9 @@
 title: "Amartya Kumar Maulik"
 logo: 20231202_120622.jpg
 description: |
-  M.S. in Statistics at IIT, Kanpur <br />
-  B.S. in Statistcis University of Calcultta
+  Ph.D. Candidate in Statistics at Colorado State University<br />
+  M.S. in Statistics, Indian Institute of Technology Kanpur<br />
+  B.S. in Statistics, University of Calcutta
 ---
 
 <!--
