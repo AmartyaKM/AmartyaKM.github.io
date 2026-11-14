@@ -65,9 +65,9 @@
 - Studied discrete-time martingales from a measure-theoretic perspective.
 - **Key topics:** Martingale convergence theorem and related theoretical results.
 
-### B.S. in Statistics, University of Calcutta | Aug 2016 – May 2019
+[### B.S. in Statistics, University of Calcutta | Aug 2016 – May 2019
 
 #### Psychological Survey Project
 
 - Conducted an empirical study of psychological well-being across academic years.
-- **Finding:** No significant evidence of higher depression levels among second-year students compared with other cohorts.
+- **Finding:** No significant evidence of higher depression levels among second-year students compared with other cohorts.]
