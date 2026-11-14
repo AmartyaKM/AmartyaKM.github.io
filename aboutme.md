@@ -1,10 +1,5 @@
-Bayesian biostatistician building decision-theoretic methods for clinical trials.
+Bayesian biostatistician designing smarter clinical trials. PhD candidate in Statistics at Colorado State University (graduating May 2027). I develop Bayesian methods for adaptive and basket trials, which have been published in Biometrics and recognized with an Honorable Mention at JSM 2026. I also built a clinical prediction tool in R and published it in Frontiers in Neurology. Open to industry biostatistics roles and postdoctoral positions starting in fall 2027.
 
-I’m a PhD candidate in Statistics at Colorado State University (May 2027). My work is published in Biometrics and Frontiers in Neurology, and my basket-trial paper earned an Honorable Mention at JSM 2026.
-
-Skills: Bayesian modeling, MCMC, clinical trial design, predictive modeling, R, Python.
-
-Open to postdoctoral positions and industry biostatistics roles.
 **Contact:** [Email](mailto:amartyakumarmaulik@gmail.com) | [LinkedIn](https://www.linkedin.com/in/amartya-kumar-maulik-ba144018b/) | [CV](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/AmartyaKumarMaulik_CV_2026.pdf)
 
 
