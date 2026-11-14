@@ -2,57 +2,76 @@
 
 ### Colorado State University
 
-I have taught and supported instruction across undergraduate and graduate statistics courses at CSU, covering statistical literacy, programming, applied statistical methods, regression, and experimental design.
+I have taught and supported instruction across undergraduate and graduate statistics courses at CSU, covering statistical literacy, programming, applied statistical methods, regression, experimental design, mathematical statistics, mixed models, and time series.
 
-### 2026
-#### Fall
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-- **STAA 573: Analysis of Time Series** - Grader
-#### Summer
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-#### Spring
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-- 
-### 2025
-#### Fall
-- **STAT 100: Statistical Literacy** - Instructor
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-#### Summer
-- **STAT 158: Introduction to R Programming** - Instructor
-#### Spring
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-- **STAT 530: Mathematical Statistics** - Grader
+### Topics Covered
 
-### 2024
-#### Fall
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-- **STAT 540: Data Analysis and Regression** - Grader
-#### Spring
-- **STAT 100: Statistical Literacy** - Instructor
-- **STAR 512: Design and Data Analysis for Researchers II** - Grader
+#### Statistical Literacy and Introductory Statistics
 
-### 2023
-#### Fall
-- **STAT 301: Introduction to Applied Statistical Methods** - Instructor
-- **STAT 341: Statistical Data Analysis I** - Grader
-#### Spring
-- **STAA 551: Regression Models and Applications** - Grader
-- **STAA 554: Mixed Models** - Grader
+**Topics:** Probability, randomness, variation, descriptive statistics, sampling, confidence intervals, hypothesis testing, correlation, tests of association, experimental and observational studies, bias, Simpson's paradox, p-values, and interpretation of statistical results.
 
-### 20222
-#### Fall
-- **STAT 201: General Statistics** - Instructor
+**Courses:**
 
-### Courses Taught
+- **STAT 100: Statistical Literacy** — Instructor
+  - Spring 2024
+  - Fall 2025
+- **STAT 201: General Statistics** — Instructor
+  - Fall 2022
 
-#### STAT 301: Introduction to Applied Statistical Methods
-Covered probability, sampling distributions, confidence intervals, hypothesis testing, statistical power, ANOVA, correlation, regression, and interaction. Emphasized practical statistical inference, interpretation of results, and software-based analysis.
+#### Applied Statistical Methods
 
-#### STAT 100: Statistical Literacy
-Introduced randomness, probability, variation, measurement, experimental and observational studies, Simpson's paradox, bias in statistical studies, and p-values. Focused on developing the ability to critically evaluate statistical information.
+**Topics:** Sampling distributions, confidence intervals, hypothesis testing, statistical power, ANOVA, correlation, regression, interaction, statistical inference, interpretation of results, and software-based statistical analysis.
 
-#### STAT 158: Introduction to R Programming
-Introduced programming in R for statistical computing, including data objects, loops, conditional statements, and the use of packages.
+**Course:**
 
-#### STAT 201: General Statistics
-Covered graphs, descriptive statistics, confidence intervals, hypothesis testing, correlation, and tests of association, using JMP for statistical analysis.
+- **STAT 301: Introduction to Applied Statistical Methods** — Instructor
+  - Fall 2023
+  - Fall 2024
+  - Spring 2025
+  - Summer 2025
+  - Fall 2025
+  - Spring 2026
+  - Summer 2026
+  - Fall 2026
+
+#### Statistical Programming
+
+**Topics:** R programming, data objects, conditional statements, loops, functions, packages, data manipulation, and statistical computing.
+
+**Course:**
+
+- **STAT 158: Introduction to R Programming** — Instructor
+  - Summer 2025
+
+#### Regression and Mixed Models
+
+**Topics:** Linear regression, model interpretation, regression diagnostics, applications of regression models, mixed-effects models, and data analysis.
+
+**Courses:**
+
+- **STAA 551: Regression Models and Applications** — Grader
+  - Spring 2023
+- **STAA 554: Mixed Models** — Grader
+  - Spring 2023
+- **STAT 540: Data Analysis and Regression** — Grader
+  - Fall 2024
+
+#### Mathematical Statistics
+
+**Topics:** Probability theory, statistical distributions, estimation, hypothesis testing, and foundational statistical theory.
+
+**Course:**
+
+- **STAT 530: Mathematical Statistics** — Grader
+  - Spring 2025
+
+#### Experimental Design and Time Series
+
+**Topics:** Experimental design, principles of study design, analysis of experimental data, time series methods, and statistical analysis of temporal data.
+
+**Courses:**
+
+- **STAR 512: Design and Data Analysis for Researchers II** — Grader
+  - Spring 2024
+- **STAA 573: Analysis of Time Series** — Grader
+  - Fall 2026
