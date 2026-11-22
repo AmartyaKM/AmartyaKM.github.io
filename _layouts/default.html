@@ -815,6 +815,56 @@
 
         }
 
+            });
+
+
+      /* Open Markdown links in a new browser tab */
+
+      function setLinksToOpenInNewTab() {
+
+        document.querySelectorAll("zero-md").forEach(function(zeroMd) {
+
+          if (!zeroMd.shadowRoot) {
+            return;
+          }
+
+          zeroMd.shadowRoot.querySelectorAll("a").forEach(function(link) {
+
+            const href = link.getAttribute("href");
+
+            if (!href) {
+              return;
+            }
+
+            if (
+              href === "#about" ||
+              href === "#teaching" ||
+              href === "#publications" ||
+              href === "#presentations"
+            ) {
+              return;
+            }
+
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+
+          });
+
+        });
+
+      }
+
+      const observer = new MutationObserver(function() {
+        setLinksToOpenInNewTab();
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      window.addEventListener("load", function() {
+        setTimeout(setLinksToOpenInNewTab, 500);
       });
 
     </script>
