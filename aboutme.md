@@ -6,7 +6,7 @@ My research spans **Bayesian statistical methodology, clinical trials, and stati
 
 I am currently open to **industry biostatistics roles** and **postdoctoral positions** beginning in Fall 2027.
 
-**Contact:** [Email](mailto:amartyakumarmaulik@gmail.com) | [LinkedIn](https://www.linkedin.com/in/amartya-kumar-maulik-ba144018b/) | [CV](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/AmartyaKumarMaulik_CV_2026.pdf)
+**Contact:** [Email](mailto:amartyakumarmaulik@gmail.com) | [LinkedIn](https://www.linkedin.com/in/amartya-kumar-maulik-ba144018b/) | [CV](https://AmartyaKM.github.io/AmartyaKumarMaulik_CV_2026.pdf)
 
 
 
