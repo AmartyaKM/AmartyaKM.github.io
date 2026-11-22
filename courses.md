@@ -52,5 +52,8 @@
 
 ## STAT 201 — General Statistics
 **Instructor** &nbsp;&nbsp; **(FA22)**
-
+- Led recitation sessions (50-minute sessions) once a week
+- Reviewed essential introductory statistics topics with students
+- Assisted students in completing weekly discussion assignments
+- Graded weekly discussions, midterms & final exams
 **Course Description:** Graphs, descriptive statistics, confidence intervals, hypothesis tests, correlation and simple regression, tests of association. Use JMP software to analyze data.
