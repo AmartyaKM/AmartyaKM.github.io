@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+
   <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% seo %}
 
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link
+      rel="stylesheet"
+      href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}"
+    >
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -15,7 +20,33 @@
 
     {% include head-custom.html %}
 
+
+    <!-- ================================================================
+         CUSTOM STYLING
+         ================================================================ -->
+
     <style>
+
+      /* ================================================================
+         GENERAL PAGE LAYOUT
+         ================================================================ */
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .wrapper {
+        width: 1300px;
+        max-width: 95%;
+        margin: 0 auto;
+      }
+
 
       /* ================================================================
          FULL-WIDTH LANDING PAGE HERO
@@ -24,6 +55,7 @@
       .landing-hero {
         width: 100%;
         height: 300px;
+
         margin: 0 0 35px 0;
 
         background-image:
@@ -42,25 +74,28 @@
 
 
       /* ================================================================
-         GENERAL PAGE WIDTH
-         ================================================================ */
-
-      .wrapper {
-        width: 1300px;
-        max-width: 95%;
-      }
-
-
-      /* ================================================================
          SIDEBAR
          ================================================================ */
 
       header {
         width: 250px;
+
+        float: left;
+
+        position: static;
+
+        padding: 0;
+        margin: 0;
       }
 
       header img {
         max-width: 230px;
+        height: auto;
+        display: block;
+      }
+
+      header h1 {
+        margin-top: 10px;
       }
 
 
@@ -70,6 +105,11 @@
 
       section.custom_section {
         width: 1000px;
+
+        float: right;
+
+        padding: 0;
+        margin: 0;
       }
 
 
@@ -84,44 +124,57 @@
         flex-wrap: wrap;
 
         padding: 5px;
+
         box-sizing: border-box;
       }
 
 
-      /* Hide radio buttons */
+      /* ================================================================
+         HIDE RADIO BUTTONS
+         ================================================================ */
 
       .tabs input[type="radio"] {
         display: none;
       }
 
 
-      /* Tab labels */
+      /* ================================================================
+         TAB LABELS
+         ================================================================ */
 
       .tabs label {
         display: inline-block;
 
         margin: 0;
+
         padding: 15px 22px;
 
         font-weight: 600;
+
         text-align: center;
 
         color: #bbb;
 
         border: 1px solid transparent;
+
         border-radius: 15px;
       }
 
 
-      /* Hover effect */
+      /* ================================================================
+         TAB HOVER
+         ================================================================ */
 
       .tabs label:hover {
         color: #888;
+
         cursor: pointer;
       }
 
 
-      /* Active tab */
+      /* ================================================================
+         ACTIVE TAB
+         ================================================================ */
 
       .tabs input[type="radio"]:checked + label {
         color: #267CB9;
@@ -144,18 +197,20 @@
         width: 100%;
 
         padding: 20px;
+
         box-sizing: border-box;
 
         background: #fff;
 
         order: 1;
+
         display: none;
       }
 
 
-      /*
-       * Display the content belonging to the selected tab.
-       */
+      /* ================================================================
+         SHOW SELECTED TAB CONTENT
+         ================================================================ */
 
       .tabs input[type="radio"]:checked + label + .tabContent {
         display: block;
@@ -163,7 +218,7 @@
 
 
       /* ================================================================
-         ABOUT ME TEXT
+         ABOUT ME
          ================================================================ */
 
       #about-content {
@@ -189,7 +244,7 @@
 
 
       /* ================================================================
-         LINKS INSIDE TABS
+         LINKS
          ================================================================ */
 
       .tabContent a {
@@ -202,12 +257,24 @@
          ================================================================ */
 
       footer {
-        width: 1000px;
+        width: 100%;
+
+        clear: both;
+
+        float: none;
+
+        position: static;
+
+        margin-top: 30px;
+
+        padding-bottom: 20px;
+
+        box-sizing: border-box;
       }
 
 
       /* ================================================================
-         MOBILE
+         MOBILE / TABLET
          ================================================================ */
 
       @media only screen and (max-width: 1100px) {
@@ -219,21 +286,31 @@
 
         header {
           width: 250px;
+
+          float: left;
+
+          position: static;
         }
 
         section.custom_section {
           width: calc(100% - 280px);
+
+          float: right;
         }
 
         footer {
           width: 100%;
+
+          clear: both;
+
+          position: static;
         }
 
       }
 
 
       /* ================================================================
-         SMALL MOBILE
+         SMALLER SCREENS
          ================================================================ */
 
       @media only screen and (max-width: 900px) {
@@ -245,39 +322,59 @@
 
         header {
           width: 100%;
+
           float: none;
+
+          position: static;
+
+          margin-bottom: 25px;
         }
 
         section.custom_section {
           width: 100%;
+
           float: none;
         }
 
         footer {
           width: 100%;
+
+          clear: both;
+
+          float: none;
+
+          position: static;
+
+          margin-top: 30px;
         }
 
         .landing-hero {
           height: 220px;
+
           margin-bottom: 25px;
         }
 
       }
 
 
+      /* ================================================================
+         VERY SMALL MOBILE SCREENS
+         ================================================================ */
+
       @media only screen and (max-width: 600px) {
+
+        .landing-hero {
+          height: 180px;
+        }
 
         .tabs label {
           padding: 12px 14px;
+
           font-size: 14px;
         }
 
         .tabs .tabContent {
           padding: 15px;
-        }
-
-        .landing-hero {
-          height: 180px;
         }
 
       }
@@ -304,37 +401,54 @@
     <div class="wrapper">
 
 
-      <!-- ============================================================
+      <!-- ==============================================================
            SIDEBAR
-           ============================================================ -->
+           ============================================================== -->
 
       <header>
 
         {% if site.logo %}
+
           <img
             src="{{ site.logo | relative_url }}"
             alt="Amartya Kumar Maulik"
           />
+
         {% endif %}
 
+
         <h1>
+
           <a href="{{ "/" | absolute_url }}">
+
             {{ page.title | default: site.github.repository_name }}
+
           </a>
+
         </h1>
 
+
         <p>
+
           {{ page.description | default: site.github.project_tagline }}
+
         </p>
 
 
         {% if site.github.is_project_page %}
 
           <p class="view">
+
             <a href="{{ site.github.repository_url }}">
+
               View the Project on GitHub
-              <small>{{ site.github.repository_nwo }}</small>
+
+              <small>
+                {{ site.github.repository_nwo }}
+              </small>
+
             </a>
+
           </p>
 
         {% endif %}
@@ -345,21 +459,35 @@
           <ul class="downloads">
 
             <li>
+
               <a href="{{ page.github.zip_url }}">
+
                 Download <strong>ZIP File</strong>
+
               </a>
+
             </li>
 
+
             <li>
+
               <a href="{{ page.github.tar_url }}">
+
                 Download <strong>TAR Ball</strong>
+
               </a>
+
             </li>
 
+
             <li>
+
               <a href="{{ page.github.repository_url }}">
+
                 View On <strong>GitHub</strong>
+
               </a>
+
             </li>
 
           </ul>
@@ -369,23 +497,23 @@
       </header>
 
 
-      <!-- ============================================================
+      <!-- ==============================================================
            MAIN CONTENT
-           ============================================================ -->
+           ============================================================== -->
 
       <section class="custom_section">
 
 
-        <!-- ========================================================
+        <!-- ============================================================
              TABS
-             ======================================================== -->
+             ============================================================ -->
 
         <div class="tabs">
 
 
-          <!-- ======================================================
+          <!-- ==========================================================
                ABOUT ME
-               ====================================================== -->
+               ========================================================== -->
 
           <input
             type="radio"
@@ -395,8 +523,11 @@
           >
 
           <label for="tab-about">
+
             About Me
+
           </label>
+
 
           <div class="tabContent">
 
@@ -408,9 +539,9 @@
           </div>
 
 
-          <!-- ======================================================
+          <!-- ==========================================================
                TEACHING
-               ====================================================== -->
+               ========================================================== -->
 
           <input
             type="radio"
@@ -419,8 +550,11 @@
           >
 
           <label for="tab-teaching">
+
             Teaching
+
           </label>
+
 
           <div class="tabContent">
 
@@ -431,9 +565,9 @@
           </div>
 
 
-          <!-- ======================================================
+          <!-- ==========================================================
                PUBLICATIONS
-               ====================================================== -->
+               ========================================================== -->
 
           <input
             type="radio"
@@ -442,8 +576,11 @@
           >
 
           <label for="tab-publications">
+
             Publications
+
           </label>
+
 
           <div class="tabContent">
 
@@ -454,9 +591,9 @@
           </div>
 
 
-          <!-- ======================================================
+          <!-- ==========================================================
                PRESENTATIONS
-               ====================================================== -->
+               ========================================================== -->
 
           <input
             type="radio"
@@ -465,8 +602,11 @@
           >
 
           <label for="tab-presentations">
+
             Presentations
+
           </label>
+
 
           <div class="tabContent">
 
@@ -482,32 +622,47 @@
       </section>
 
 
-      <!-- ============================================================
+      <!-- ==============================================================
            FOOTER
-           ============================================================ -->
+           ============================================================== -->
 
       <footer>
 
         {% if site.github.is_project_page %}
 
           <p>
+
             This project is maintained by
+
             <a href="{{ site.github.owner_url }}">
+
               {{ site.github.owner_name }}
+
             </a>
+
           </p>
 
         {% endif %}
 
+
         <p>
+
           <small>
+
             Hosted on GitHub Pages
+
             &mdash;
+
             Theme by
+
             <a href="https://github.com/orderedlist">
+
               orderedlist
+
             </a>
+
           </small>
+
         </p>
 
       </footer>
@@ -516,16 +671,18 @@
     </div>
 
 
-    <!-- ==============================================================
+    <!-- ================================================================
          ORIGINAL THEME JAVASCRIPT
-         ============================================================== -->
+         ================================================================ -->
 
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script
+      src="{{ "/assets/js/scale.fix.js" | relative_url }}">
+    </script>
 
 
-    <!-- ==============================================================
+    <!-- ================================================================
          ZERO-MD
-         ============================================================== -->
+         ================================================================ -->
 
     <script
       type="module"
@@ -533,9 +690,9 @@
     </script>
 
 
-    <!-- ==============================================================
+    <!-- ================================================================
          TAB LINKS INSIDE MARKDOWN
-         ============================================================== -->
+         ================================================================ -->
 
     <script>
 
@@ -551,6 +708,7 @@
 
       document.addEventListener("click", function(event) {
 
+
         /*
          * zero-md uses Shadow DOM, so the normal event.target may
          * be the <zero-md> element rather than the <a> element.
@@ -562,6 +720,7 @@
 
         let clickedLink = null;
 
+
         for (const element of path) {
 
           if (
@@ -569,22 +728,30 @@
             element.tagName &&
             element.tagName.toLowerCase() === "a"
           ) {
+
             clickedLink = element;
+
             break;
+
           }
 
         }
 
 
         if (!clickedLink) {
+
           return;
+
         }
 
 
         const href = clickedLink.getAttribute("href");
 
+
         if (!href) {
+
           return;
+
         }
 
 
@@ -614,7 +781,10 @@
 
           event.preventDefault();
 
-          const tab = document.getElementById(tabMap[href]);
+
+          const tab =
+            document.getElementById(tabMap[href]);
+
 
           if (tab) {
 
@@ -628,11 +798,15 @@
             const content =
               document.querySelector(".custom_section");
 
+
             if (content) {
 
               content.scrollIntoView({
+
                 behavior: "smooth",
+
                 block: "start"
+
               });
 
             }
@@ -647,4 +821,5 @@
 
 
   </body>
+
 </html>
