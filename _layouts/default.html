@@ -5,178 +5,681 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
+
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+
     {% include head-custom.html %}
   </head>
+
   <body>
+
     <div class="wrapper">
+
+      <!-- ========================================================== -->
+      <!-- SIDEBAR                                                    -->
+      <!-- ========================================================== -->
+
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ page.title | default: site.github.repository_name }}</a></h1>
+
+        <h1>
+          <a href="{{ "/" | absolute_url }}">
+            {{ page.title | default: site.github.repository_name }}
+          </a>
+        </h1>
 
         {% if site.logo %}
-          <img src="{{page.logo | relative_url}}" alt="Logo" />
+          <img
+            src="{{ site.logo | relative_url }}"
+            alt="Amartya Kumar Maulik"
+          />
         {% endif %}
 
-        <p>{{ page.description | default: site.github.project_tagline }}</p>
+        <p>
+          {{ page.description | default: site.github.project_tagline }}
+        </p>
 
         {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+          <p class="view">
+            <a href="{{ site.github.repository_url }}">
+              View the Project on GitHub
+              <small>{{ site.github.repository_nwo }}</small>
+            </a>
+          </p>
         {% endif %}
 
         {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ page.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ page.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ page.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </header>
-      
-  <section class="custom_section">
-    <!-- ------------------------------------------------------------------------ -->
-    <!--                           Formatting Tabs                                -->
-    <!-- ------------------------------------------------------------------------ -->
-     <div class="tabs">
-        <input type="radio" name="tabs" id="tab-about" checked>
-        <label for="tab-about">About Me</label>
+          <ul class="downloads">
+            <li>
+              <a href="{{ page.github.zip_url }}">
+                Download <strong>ZIP File</strong>
+              </a>
+            </li>
 
-    <div class="tabContent">
-        <div class="about-hero"></div>
-        <zero-md id="about-content" src="aboutme.md"></zero-md>
+            <li>
+              <a href="{{ page.github.tar_url }}">
+                Download <strong>TAR Ball</strong>
+              </a>
+            </li>
+
+            <li>
+              <a href="{{ page.github.repository_url }}">
+                View On <strong>GitHub</strong>
+              </a>
+            </li>
+          </ul>
+        {% endif %}
+
+      </header>
+
+
+      <!-- ========================================================== -->
+      <!-- MAIN CONTENT / TABS                                        -->
+      <!-- ========================================================== -->
+
+      <section class="custom_section">
+
+        <div class="tabs">
+
+
+          <!-- ====================================================== -->
+          <!-- ABOUT ME                                                -->
+          <!-- ====================================================== -->
+
+          <input
+            type="radio"
+            name="tabs"
+            id="tab-about"
+            checked
+          >
+
+          <label for="tab-about">
+            About Me
+          </label>
+
+          <div class="tabContent">
+
+            <!-- Background image -->
+            <div class="about-hero"></div>
+
+            <!-- About Me markdown -->
+            <zero-md
+              id="about-content"
+              src="aboutme.md">
+            </zero-md>
+
+          </div>
+
+
+          <!-- ====================================================== -->
+          <!-- TEACHING                                                -->
+          <!-- ====================================================== -->
+
+          <input
+            type="radio"
+            name="tabs"
+            id="tab-teaching"
+          >
+
+          <label for="tab-teaching">
+            Teaching
+          </label>
+
+          <div class="tabContent">
+
+            <zero-md
+              src="courses.md">
+            </zero-md>
+
+          </div>
+
+
+          <!-- ====================================================== -->
+          <!-- PUBLICATIONS                                            -->
+          <!-- ====================================================== -->
+
+          <input
+            type="radio"
+            name="tabs"
+            id="tab-publications"
+          >
+
+          <label for="tab-publications">
+            Publications
+          </label>
+
+          <div class="tabContent">
+
+            <zero-md
+              src="research.md">
+            </zero-md>
+
+          </div>
+
+
+          <!-- ====================================================== -->
+          <!-- PRESENTATIONS                                           -->
+          <!-- ====================================================== -->
+
+          <input
+            type="radio"
+            name="tabs"
+            id="tab-presentations"
+          >
+
+          <label for="tab-presentations">
+            Presentations
+          </label>
+
+          <div class="tabContent">
+
+            <zero-md
+              src="talks.md">
+            </zero-md>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- ========================================================== -->
+      <!-- FOOTER                                                     -->
+      <!-- ========================================================== -->
+
+      <footer>
+
+        {% if site.github.is_project_page %}
+          <p>
+            This project is maintained by
+            <a href="{{ site.github.owner_url }}">
+              {{ site.github.owner_name }}
+            </a>
+          </p>
+        {% endif %}
+
+        <p>
+          <small>
+            Hosted on GitHub Pages
+            &mdash;
+            Theme by
+            <a href="https://github.com/orderedlist">
+              orderedlist
+            </a>
+          </small>
+        </p>
+
+      </footer>
+
     </div>
 
 
-<input type="radio" name="tabs" id="tab-teaching">
-<label for="tab-teaching">Teaching</label>
+    <!-- ============================================================ -->
+    <!-- ORIGINAL THEME JAVASCRIPT                                    -->
+    <!-- ============================================================ -->
 
-<div class="tabContent">
-  <zero-md src="courses.md"></zero-md>
-</div>
-
-
-<input type="radio" name="tabs" id="tab-publications">
-<label for="tab-publications">Publications</label>
-
-<div class="tabContent">
-  <zero-md src="research.md"></zero-md>
-</div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 
 
-<input type="radio" name="tabs" id="tab-presentations">
-<label for="tab-presentations">Presentations</label>
+    <!-- ============================================================ -->
+    <!-- ZERO-MD                                                     -->
+    <!-- ============================================================ -->
 
-<div class="tabContent">
-  <zero-md src="talks.md"></zero-md>
-</div>
-       
-        <!-- ------------------------------------------------------------------------ -->
-        <!-- if you want to add a tab(s) copy and paste below, and make the corresponding
-             .md file. make sure to change id if adding more than just one. -->
-        <!-- ------------------------------------------------------------------------ -->
-        <!--
-        <input type="radio" name="tabs" id="tab6"> 
-        <label for="tab6">Extra</label>
-        <div class="tabContent">
-          <zero-md src="extra.md"></zero-md>
-        </div>
-        -->
-        <!-- ------------------------------------------------------------------------ -->
-        <!-- ------------------------------------------------------------------------ -->
-      </div>
-      <!-- ------------------------------------------------------------------------ -->
-      <!-- ------------------------------------------------------------------------ -->
-  </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-  </div>
-  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-      <!-- ------------------------------------------------------------------------ -->
-  <!--                    Using this to read in md files                        -->
-  <!-- ------------------------------------------------------------------------ -->
-  <script
-    type="module"
-    src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
-  ></script>
-  
-  <!-- ------------------------------------------------------------------------ -->
-  <!-- ------------------------------------------------------------------------ -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js">
+    </script>
+
+
+    <!-- ============================================================ -->
+    <!-- TAB LINKS INSIDE MARKDOWN                                    -->
+    <!-- ============================================================ -->
+
+    <script>
+
+      /*
+       * This allows links inside the Markdown files to switch tabs.
+       *
+       * For example:
+       *
+       * [Teaching](#teaching)
+       * [Publications](#publications)
+       * [Presentations](#presentations)
+       */
+
+      document.addEventListener("click", function(event) {
+
+        /*
+         * zero-md uses Shadow DOM, so the normal event.target may
+         * be the <zero-md> element rather than the <a> element.
+         *
+         * composedPath() lets us find the actual clicked link.
+         */
+
+        const path = event.composedPath();
+
+        let clickedLink = null;
+
+        for (const element of path) {
+
+          if (
+            element &&
+            element.tagName &&
+            element.tagName.toLowerCase() === "a"
+          ) {
+            clickedLink = element;
+            break;
+          }
+
+        }
+
+        if (!clickedLink) {
+          return;
+        }
+
+
+        const href = clickedLink.getAttribute("href");
+
+        if (!href) {
+          return;
+        }
+
+
+        /*
+         * Map Markdown links to the corresponding radio button.
+         */
+
+        const tabMap = {
+
+          "#about": "tab-about",
+
+          "#teaching": "tab-teaching",
+
+          "#publications": "tab-publications",
+
+          "#presentations": "tab-presentations"
+
+        };
+
+
+        /*
+         * If the clicked link corresponds to a tab,
+         * switch to that tab.
+         */
+
+        if (tabMap[href]) {
+
+          event.preventDefault();
+
+          const tab = document.getElementById(tabMap[href]);
+
+          if (tab) {
+
+            tab.checked = true;
+
+            /*
+             * Scroll back to the beginning of the main content.
+             */
+
+            const content =
+              document.querySelector(".custom_section");
+
+            if (content) {
+
+              content.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              });
+
+            }
+
+          }
+
+        }
+
+      });
+
+    </script>
+
+
   </body>
 </html>
-  
-<!-- ------------------------------------------------------------------------ -->
-<!--                           Styling the tabs                               -->
-<!-- ------------------------------------------------------------------------ -->
-<style> 
-  @media only screen and (min-width: 720px) {
-      .custom_section {
-      width: 550px;
-    }
+
+
+<!-- ================================================================= -->
+<!-- CUSTOM STYLING                                                    -->
+<!-- ================================================================= -->
+
+<style>
+
+
+/* ================================================================== */
+/* GENERAL PAGE WIDTH                                                  */
+/* ================================================================== */
+
+/*
+ * The Minimal theme normally uses a relatively narrow fixed layout.
+ *
+ * We make the overall page wider so that the sidebar and main content
+ * do not leave a large amount of unused space on the right.
+ */
+
+.wrapper {
+
+  width: 1100px;
+
+  max-width: 95%;
+
+}
+
+
+/* ================================================================== */
+/* SIDEBAR                                                             */
+/* ================================================================== */
+
+header {
+
+  width: 250px;
+
+}
+
+
+header img {
+
+  max-width: 230px;
+
+}
+
+
+/* ================================================================== */
+/* MAIN CONTENT                                                        */
+/* ================================================================== */
+
+section.custom_section {
+
+  width: 780px;
+
+}
+
+
+/* ================================================================== */
+/* TABS                                                               */
+/* ================================================================== */
+
+.tabs {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  padding: 5px;
+
+  box-sizing: border-box;
+
+}
+
+
+/* Hide radio buttons */
+
+.tabs input[type="radio"] {
+
+  display: none;
+
+}
+
+
+/* Tab labels */
+
+.tabs label {
+
+  display: inline-block;
+
+  margin: 0;
+
+  padding: 15px 22px;
+
+  font-weight: 600;
+
+  text-align: center;
+
+  color: #bbb;
+
+  border: 1px solid transparent;
+
+  border-radius: 15px;
+
+}
+
+
+/* Hover effect */
+
+.tabs label:hover {
+
+  color: #888;
+
+  cursor: pointer;
+
+}
+
+
+/* Active tab */
+
+.tabs input[type="radio"]:checked + label {
+
+  color: #267CB9;
+
+  background:
+    radial-gradient(
+      ellipse,
+      #eee 0,
+      #f7f7f7,
+      #fff 100%
+    );
+
+}
+
+
+/* ================================================================== */
+/* TAB CONTENT                                                         */
+/* ================================================================== */
+
+.tabs .tabContent {
+
+  width: 100%;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+
+  order: 1;
+
+  display: none;
+
+}
+
+
+/*
+ * Display the content belonging to the selected tab.
+ */
+
+.tabs input[type="radio"]:checked + label + .tabContent {
+
+  display: block;
+
+}
+
+
+/* ================================================================== */
+/* ABOUT ME HERO / BACKGROUND IMAGE                                    */
+/* ================================================================== */
+
+.about-hero {
+
+  width: 100%;
+
+  height: 250px;
+
+  margin-bottom: 30px;
+
+  border-radius: 8px;
+
+  background-image:
+
+    linear-gradient(
+      rgba(0, 0, 0, 0.20),
+      rgba(0, 0, 0, 0.20)
+    ),
+
+    url("{{ "background.jpeg" | relative_url }}");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+}
+
+
+/* ================================================================== */
+/* ABOUT ME TEXT                                                       */
+/* ================================================================== */
+
+#about-content {
+
+  width: 100%;
+
+}
+
+
+/* ================================================================== */
+/* MARKDOWN HEADINGS                                                   */
+/* ================================================================== */
+
+.tabContent h1 {
+
+  font-size: 2em;
+
+}
+
+
+.tabContent h2 {
+
+  font-size: 1.6em;
+
+}
+
+
+.tabContent h3 {
+
+  font-size: 1.25em;
+
+}
+
+
+/* ================================================================== */
+/* LINKS INSIDE ABOUT ME                                               */
+/* ================================================================== */
+
+/*
+ * These are normal Markdown links, but we make them visually
+ * consistent with the Minimal theme.
+ */
+
+.tabContent a {
+
+  color: #267CB9;
+
+}
+
+
+/* ================================================================== */
+/* FOOTER                                                              */
+/* ================================================================== */
+
+footer {
+
+  width: 780px;
+
+}
+
+
+/* ================================================================== */
+/* MOBILE                                                              */
+/* ================================================================== */
+
+@media only screen and (max-width: 900px) {
+
+  .wrapper {
+
+    width: 95%;
+
+    max-width: 95%;
+
   }
-  
-  .tabs {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 5px;
+
+  header {
+
+    width: 100%;
+
   }
-  .tabs input[type="radio"] {
-      display: none;
+
+  section.custom_section {
+
+    width: 100%;
+
   }
+
+  footer {
+
+    width: 100%;
+
+  }
+
+}
+
+
+/* ================================================================== */
+/* SMALL MOBILE                                                        */
+/* ================================================================== */
+
+@media only screen and (max-width: 600px) {
+
   .tabs label {
-    display: inline-block;
-    margin: 0px; 
-    padding: 15px 25px;
-    font-weight: 600;
-    text-align: center;
-    color: #bbb;
-    border: 1px solid transparent;
-    border-radius: 15px;
+
+    padding: 12px 14px;
+
+    font-size: 14px;
+
   }
 
-  .tabs label:before {
-    font-weight: normal;
-    margin-right: 10px;
-  }
-
-  .tabs label:hover {
-    color: #888;
-    cursor: pointer;
-  }
 
   .tabs .tabContent {
-      width: 100%;
-      padding: 20px;
-      background: #fff;
-      order: 1;
-      display: none;
-  }
-  .tabs .tabContent h2 {
-      font-size: 3em;
+
+    padding: 15px;
+
   }
 
-  .tabs input[type='radio']:checked + label + .tabContent {
-      display: block;
+
+  .about-hero {
+
+    height: 180px;
+
+    border-radius: 5px;
+
   }
 
-  .tabs input[type="radio"]:checked + label {
-      color: #267CB9;
-      background: radial-gradient(ellipse, #eee 0, #f7f7f7, #fff 100%);    
-  }
+}
+
+
 </style>
-<!-- ------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------ -->
-
-
-<!-- ------------------------------------------------------------------------ -->
-<!-- Everything with the comments styled like this was add by brodyee and zack t. -->
-<!-- ------------------------------------------------------------------------ -->
-
-
