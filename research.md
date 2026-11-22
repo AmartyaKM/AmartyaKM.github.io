@@ -9,14 +9,14 @@
 
 ### [Prediction Tool for Discharge Disposition and 30-Day Readmission Using Electronic Health Records Among Patients Hospitalized for Traumatic Brain Injury](https://pubmed.ncbi.nlm.nih.gov/40589981/)
 [Download PDF](https://github.com/AmartyaKM/AmartyaKM.github.io/blob/main/Prediction%20tool%20for%20discharge%20disposition%20and%2030-day%20readmission%20using%20electronic%20health%20records%20among%20patients%20hospitalized%20for%20traumatic%20brain%20injury.pdf)
-
+[R-shiny tool](https://tjzhou.shinyapps.io/INREACHapp/)
 - Published in **Frontiers in Neurology**
 - **Advisor:** Dr. Tianjian Zhou
 - **Description:** Developed and validated statistical prediction models using electronic health record data to predict discharge disposition and 30-day readmission among hospitalized traumatic brain injury patients. Built an accessible clinical prediction tool using regression models and machine learning evaluation techniques to support personalized discharge planning and risk stratification.
 
 ## Ongoing Works
 
-### Hierarchical Sparse Mixture of Finite Mixtures
+### Thinned Hierarchical Mixture of Finite Mixtures
 
 - **Degree:** Ph.D. in Statistics, Colorado State University | Aug 2022 – Present
 - **Advisors:** Dr. Matt Kovlosky and Dr. Tianjian Zhou
