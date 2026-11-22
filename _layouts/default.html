@@ -14,20 +14,304 @@
     <![endif]-->
 
     {% include head-custom.html %}
+
+    <style>
+
+      /* ================================================================
+         FULL-WIDTH LANDING PAGE HERO
+         ================================================================ */
+
+      .landing-hero {
+        width: 100%;
+        height: 300px;
+        margin: 0 0 35px 0;
+
+        background-image:
+          linear-gradient(
+            rgba(0, 0, 0, 0.20),
+            rgba(0, 0, 0, 0.20)
+          ),
+          url("{{ "background.jpeg" | relative_url }}");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 0;
+      }
+
+
+      /* ================================================================
+         GENERAL PAGE WIDTH
+         ================================================================ */
+
+      .wrapper {
+        width: 1300px;
+        max-width: 95%;
+      }
+
+
+      /* ================================================================
+         SIDEBAR
+         ================================================================ */
+
+      header {
+        width: 250px;
+      }
+
+      header img {
+        max-width: 230px;
+      }
+
+
+      /* ================================================================
+         MAIN CONTENT
+         ================================================================ */
+
+      section.custom_section {
+        width: 1000px;
+      }
+
+
+      /* ================================================================
+         TABS
+         ================================================================ */
+
+      .tabs {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+
+      /* Hide radio buttons */
+
+      .tabs input[type="radio"] {
+        display: none;
+      }
+
+
+      /* Tab labels */
+
+      .tabs label {
+        display: inline-block;
+
+        margin: 0;
+        padding: 15px 22px;
+
+        font-weight: 600;
+        text-align: center;
+
+        color: #bbb;
+
+        border: 1px solid transparent;
+        border-radius: 15px;
+      }
+
+
+      /* Hover effect */
+
+      .tabs label:hover {
+        color: #888;
+        cursor: pointer;
+      }
+
+
+      /* Active tab */
+
+      .tabs input[type="radio"]:checked + label {
+        color: #267CB9;
+
+        background:
+          radial-gradient(
+            ellipse,
+            #eee 0,
+            #f7f7f7,
+            #fff 100%
+          );
+      }
+
+
+      /* ================================================================
+         TAB CONTENT
+         ================================================================ */
+
+      .tabs .tabContent {
+        width: 100%;
+
+        padding: 20px;
+        box-sizing: border-box;
+
+        background: #fff;
+
+        order: 1;
+        display: none;
+      }
+
+
+      /*
+       * Display the content belonging to the selected tab.
+       */
+
+      .tabs input[type="radio"]:checked + label + .tabContent {
+        display: block;
+      }
+
+
+      /* ================================================================
+         ABOUT ME TEXT
+         ================================================================ */
+
+      #about-content {
+        width: 100%;
+      }
+
+
+      /* ================================================================
+         MARKDOWN HEADINGS
+         ================================================================ */
+
+      .tabContent h1 {
+        font-size: 2em;
+      }
+
+      .tabContent h2 {
+        font-size: 1.6em;
+      }
+
+      .tabContent h3 {
+        font-size: 1.25em;
+      }
+
+
+      /* ================================================================
+         LINKS INSIDE TABS
+         ================================================================ */
+
+      .tabContent a {
+        color: #267CB9;
+      }
+
+
+      /* ================================================================
+         FOOTER
+         ================================================================ */
+
+      footer {
+        width: 1000px;
+      }
+
+
+      /* ================================================================
+         MOBILE
+         ================================================================ */
+
+      @media only screen and (max-width: 1100px) {
+
+        .wrapper {
+          width: 95%;
+          max-width: 95%;
+        }
+
+        header {
+          width: 250px;
+        }
+
+        section.custom_section {
+          width: calc(100% - 280px);
+        }
+
+        footer {
+          width: 100%;
+        }
+
+      }
+
+
+      /* ================================================================
+         SMALL MOBILE
+         ================================================================ */
+
+      @media only screen and (max-width: 900px) {
+
+        .wrapper {
+          width: 95%;
+          max-width: 95%;
+        }
+
+        header {
+          width: 100%;
+          float: none;
+        }
+
+        section.custom_section {
+          width: 100%;
+          float: none;
+        }
+
+        footer {
+          width: 100%;
+        }
+
+        .landing-hero {
+          height: 220px;
+          margin-bottom: 25px;
+        }
+
+      }
+
+
+      @media only screen and (max-width: 600px) {
+
+        .tabs label {
+          padding: 12px 14px;
+          font-size: 14px;
+        }
+
+        .tabs .tabContent {
+          padding: 15px;
+        }
+
+        .landing-hero {
+          height: 180px;
+        }
+
+      }
+
+    </style>
+
   </head>
+
 
   <body>
 
+
+    <!-- ================================================================
+         FULL-WIDTH BACKGROUND IMAGE
+         ================================================================ -->
+
+    <div class="landing-hero"></div>
+
+
+    <!-- ================================================================
+         MAIN PAGE WRAPPER
+         ================================================================ -->
+
     <div class="wrapper">
 
-      <!-- ========================================================== -->
-      <!-- SIDEBAR                                                    -->
-      <!-- ========================================================== -->
+
+      <!-- ============================================================
+           SIDEBAR
+           ============================================================ -->
 
       <header>
 
         {% if site.logo %}
-        <img
+          <img
             src="{{ site.logo | relative_url }}"
             alt="Amartya Kumar Maulik"
           />
@@ -43,16 +327,21 @@
           {{ page.description | default: site.github.project_tagline }}
         </p>
 
+
         {% if site.github.is_project_page %}
+
           <p class="view">
             <a href="{{ site.github.repository_url }}">
               View the Project on GitHub
               <small>{{ site.github.repository_nwo }}</small>
             </a>
           </p>
+
         {% endif %}
 
+
         {% if site.show_downloads %}
+
           <ul class="downloads">
 
             <li>
@@ -74,34 +363,29 @@
             </li>
 
           </ul>
+
         {% endif %}
 
       </header>
 
 
-      <!-- ========================================================== -->
-      <!-- MAIN CONTENT                                               -->
-      <!-- ========================================================== -->
+      <!-- ============================================================
+           MAIN CONTENT
+           ============================================================ -->
 
       <section class="custom_section">
 
-        <!-- ====================================================== -->
-        <!-- LANDING PAGE HERO                                      -->
-        <!-- ====================================================== -->
 
-        <div class="landing-hero"></div>
-
-
-        <!-- ====================================================== -->
-        <!-- TABS                                                    -->
-        <!-- ====================================================== -->
+        <!-- ========================================================
+             TABS
+             ======================================================== -->
 
         <div class="tabs">
 
 
-          <!-- ====================================================== -->
-          <!-- ABOUT ME                                                -->
-          <!-- ====================================================== -->
+          <!-- ======================================================
+               ABOUT ME
+               ====================================================== -->
 
           <input
             type="radio"
@@ -124,9 +408,9 @@
           </div>
 
 
-          <!-- ====================================================== -->
-          <!-- TEACHING                                                -->
-          <!-- ====================================================== -->
+          <!-- ======================================================
+               TEACHING
+               ====================================================== -->
 
           <input
             type="radio"
@@ -147,9 +431,9 @@
           </div>
 
 
-          <!-- ====================================================== -->
-          <!-- PUBLICATIONS                                            -->
-          <!-- ====================================================== -->
+          <!-- ======================================================
+               PUBLICATIONS
+               ====================================================== -->
 
           <input
             type="radio"
@@ -170,9 +454,9 @@
           </div>
 
 
-          <!-- ====================================================== -->
-          <!-- PRESENTATIONS                                           -->
-          <!-- ====================================================== -->
+          <!-- ======================================================
+               PRESENTATIONS
+               ====================================================== -->
 
           <input
             type="radio"
@@ -198,19 +482,21 @@
       </section>
 
 
-      <!-- ========================================================== -->
-      <!-- FOOTER                                                     -->
-      <!-- ========================================================== -->
+      <!-- ============================================================
+           FOOTER
+           ============================================================ -->
 
       <footer>
 
         {% if site.github.is_project_page %}
+
           <p>
             This project is maintained by
             <a href="{{ site.github.owner_url }}">
               {{ site.github.owner_name }}
             </a>
           </p>
+
         {% endif %}
 
         <p>
@@ -230,16 +516,16 @@
     </div>
 
 
-    <!-- ============================================================ -->
-    <!-- ORIGINAL THEME JAVASCRIPT                                    -->
-    <!-- ============================================================ -->
+    <!-- ==============================================================
+         ORIGINAL THEME JAVASCRIPT
+         ============================================================== -->
 
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 
 
-    <!-- ============================================================ -->
-    <!-- ZERO-MD                                                      -->
-    <!-- ============================================================ -->
+    <!-- ==============================================================
+         ZERO-MD
+         ============================================================== -->
 
     <script
       type="module"
@@ -247,9 +533,9 @@
     </script>
 
 
-    <!-- ============================================================ -->
-    <!-- TAB LINKS INSIDE MARKDOWN                                    -->
-    <!-- ============================================================ -->
+    <!-- ==============================================================
+         TAB LINKS INSIDE MARKDOWN
+         ============================================================== -->
 
     <script>
 
@@ -288,6 +574,7 @@
           }
 
         }
+
 
         if (!clickedLink) {
           return;
@@ -333,6 +620,7 @@
 
             tab.checked = true;
 
+
             /*
              * Scroll back to the beginning of the main content.
              */
@@ -360,337 +648,3 @@
 
   </body>
 </html>
-
-
-<!-- ================================================================= -->
-<!-- CUSTOM STYLING                                                    -->
-<!-- ================================================================= -->
-
-<style>
-
-
-/* ================================================================== */
-/* GENERAL PAGE WIDTH                                                  */
-/* ================================================================== */
-
-/*
- * The Minimal theme normally uses a relatively narrow fixed layout.
- *
- * We make the overall page wider so that the sidebar and main content
- * do not leave a large amount of unused space on the right.
- */
-
-.wrapper {
-
-  width: 1100px;
-
-  max-width: 95%;
-
-}
-
-
-/* ================================================================== */
-/* SIDEBAR                                                             */
-/* ================================================================== */
-
-header {
-
-  width: 250px;
-
-}
-
-
-header img {
-
-  max-width: 230px;
-
-}
-
-
-/* ================================================================== */
-/* MAIN CONTENT                                                        */
-/* ================================================================== */
-
-section.custom_section {
-
-  width: 780px;
-
-}
-
-
-/* ================================================================== */
-/* LANDING PAGE HERO                                                   */
-/* ================================================================== */
-
-.landing-hero {
-
-  width: 150%;
-
-  height: 350px;
-
-  margin-bottom: 25px;
-
-  border-radius: 8px;
-
-  background-image:
-
-    linear-gradient(
-      rgba(0, 0, 0, 0.20),
-      rgba(0, 0, 0, 0.20)
-    ),
-
-    url("{{ "background.jpeg" | relative_url }}");
-
-  background-size: cover;
-
-  background-position: center;
-
-  background-repeat: no-repeat;
-
-}
-
-
-/* ================================================================== */
-/* TABS                                                               */
-/* ================================================================== */
-
-.tabs {
-
-  width: 100%;
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  padding: 5px;
-
-  box-sizing: border-box;
-
-}
-
-
-/* Hide radio buttons */
-
-.tabs input[type="radio"] {
-
-  display: none;
-
-}
-
-
-/* Tab labels */
-
-.tabs label {
-
-  display: inline-block;
-
-  margin: 0;
-
-  padding: 15px 22px;
-
-  font-weight: 600;
-
-  text-align: center;
-
-  color: #bbb;
-
-  border: 1px solid transparent;
-
-  border-radius: 15px;
-
-}
-
-
-/* Hover effect */
-
-.tabs label:hover {
-
-  color: #888;
-
-  cursor: pointer;
-
-}
-
-
-/* Active tab */
-
-.tabs input[type="radio"]:checked + label {
-
-  color: #267CB9;
-
-  background:
-
-    radial-gradient(
-      ellipse,
-      #eee 0,
-      #f7f7f7,
-      #fff 100%
-    );
-
-}
-
-
-/* ================================================================== */
-/* TAB CONTENT                                                         */
-/* ================================================================== */
-
-.tabs .tabContent {
-
-  width: 100%;
-
-  padding: 20px;
-
-  box-sizing: border-box;
-
-  background: #fff;
-
-  order: 1;
-
-  display: none;
-
-}
-
-
-/*
- * Display the content belonging to the selected tab.
- */
-
-.tabs input[type="radio"]:checked + label + .tabContent {
-
-  display: block;
-
-}
-
-
-/* ================================================================== */
-/* ABOUT ME TEXT                                                       */
-/* ================================================================== */
-
-#about-content {
-
-  width: 100%;
-
-}
-
-
-/* ================================================================== */
-/* MARKDOWN HEADINGS                                                   */
-/* ================================================================== */
-
-.tabContent h1 {
-
-  font-size: 2em;
-
-}
-
-
-.tabContent h2 {
-
-  font-size: 1.6em;
-
-}
-
-
-.tabContent h3 {
-
-  font-size: 1.25em;
-
-}
-
-
-/* ================================================================== */
-/* LINKS INSIDE ABOUT ME                                               */
-/* ================================================================== */
-
-/*
- * These are normal Markdown links, but we make them visually
- * consistent with the Minimal theme.
- */
-
-.tabContent a {
-
-  color: #267CB9;
-
-}
-
-
-/* ================================================================== */
-/* FOOTER                                                              */
-/* ================================================================== */
-
-footer {
-
-  width: 780px;
-
-}
-
-
-/* ================================================================== */
-/* MOBILE                                                              */
-/* ================================================================== */
-
-@media only screen and (max-width: 900px) {
-
-  .wrapper {
-
-    width: 95%;
-
-    max-width: 95%;
-
-  }
-
-  header {
-
-    width: 100%;
-
-  }
-
-  section.custom_section {
-
-    width: 100%;
-
-  }
-
-  footer {
-
-    width: 100%;
-
-  }
-
-}
-
-
-/* ================================================================== */
-/* SMALL MOBILE                                                        */
-/* ================================================================== */
-
-@media only screen and (max-width: 600px) {
-
-  .tabs label {
-
-    padding: 12px 14px;
-
-    font-size: 14px;
-
-  }
-
-
-  .tabs .tabContent {
-
-    padding: 15px;
-
-  }
-
-
-  .landing-hero {
-
-    height: 180px;
-
-    border-radius: 5px;
-
-  }
-
-}
-
-
-</style>
