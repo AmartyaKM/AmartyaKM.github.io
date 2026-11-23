@@ -19,7 +19,7 @@
 ### Thinned Hierarchical Mixture of Finite Mixtures
 
 - **Degree:** Ph.D. in Statistics, Colorado State University | Aug 2022 – Present
-- **Advisors:** Dr. Matt Kovlosky and Dr. Tianjian Zhou
+- **Advisors:** Dr. Matt Koslovsky and Dr. Tianjian Zhou
 - **Description:** Developing a hierarchical sparse mixture model with group-specific component activation using zero-inflated priors. The work includes posterior derivations and Gibbs sampling methods for efficient Bayesian inference.
 
 ### Bayesian Functional Generalized Probit Mixed Model for Scalar-on-Function Regression
